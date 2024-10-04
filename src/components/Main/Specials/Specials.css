@@ -1,0 +1,147 @@
+.specials {
+  /* border: 1px solid royalblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 50px;
+  width: 100%;
+  padding: 15px;
+  font-family: "Karla", sans-serif;
+}
+.specials-title {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+}
+.specials-title-and-btn {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.specials-btn-menu {
+  padding: 10px;
+  font-size: 28px;
+  background-color: #f4ce14;
+  font-family: "Markazi Text", serif;
+  color: black;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+/* center all the food cards */
+.specials-food-card-holder {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specials-food {
+  /* border: 1px solid rgb(10, 28, 83); */
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 25px;
+  padding: 15px;
+}
+
+.specials-item {
+  width: 264px;
+  height: 440px;
+  border-radius: 16px;
+  background-color: #edefee;
+  border: 1px solid #e4e4e4;
+}
+.specials-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+}
+.specials-name {
+  font-size: 18px;
+  font-weight: 900;
+}
+.specials-price {
+  font-size: 16px;
+  color: #ee9972;
+}
+.specials-description {
+  font-size: 16px;
+  line-height: 1.2rem;
+  color: #495e57;
+  text-align: justify;
+
+  margin-top: 25px;
+  /* border: 1px solid red; */
+  height: 125px;
+}
+.spcecials-image {
+  /* width: 264px; */
+  width: 100%;
+  height: 182px;
+  background-repeat: none;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.specials-details {
+  padding-left: 25px;
+  padding-right: 25px;
+  /* border: 1px solid red; */
+}
+
+.specials-order {
+  margin-top: 25px;
+
+  display: flex;
+  gap: 15px;
+  /* border: 1px solid red; */
+
+  border: none;
+  outline: none;
+
+  font-weight: 800;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+
+  text-transform: uppercase;
+  background-color: #495e57;
+  color: #edefee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.specials-order:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  .specials-food {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .specials-food {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .specials-title {
+    font-size: 40px;
+  }
+
+  .specials-btn-menu {
+    font-size: 20px;
+  }
+}
